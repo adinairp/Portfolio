@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+:root{
+    --background-colour: #333647
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--background-colour);
+    position: relative;
+}
+
+/*Navbar*/
+.navbar .navbar-collapse{
+    text-align: center;
+}
+.bg-dark{
+    background-color: transparent !important;
+    transition: .5s ease-in;
+}
+.bg-dark.scrolled{
+    background: black !important;
+}
+.bg-dark:hover{
+    background: black !important;
+}
+.nav_section .navbar-brand{
+    font-size: 3rem;
+}
+.nav_section .navbar-nav li{
+    margin: 0rem 1rem;
+}
+.nav_section .navbar-nav li a{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+}
+.active{
+    color: orange !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+}
+.navbar-brand{
+    color: white !important;
+}
+.nav_section .navbar-nav .nav-link::before{
+    content: "";
+    width: 0rem;
+    height: 0rem;
+    background-color: white;
+    position: absolute;
+    bottom: .7rem;
+    transition: 0.4s;
+}
+.nav_section .navbar-nav .nav-link:hover::before{
+    content: "";
+    width: 3rem;
+    height: .2rem;
+    background-color: white;
+    position: absolute;
+    bottom: .7rem;
+}
+
+
+/*Social Media*/
+.hero-section ul{
+    position: absolute;
+    display: flex;
+    left: 10%;
+    right: 10%;
+    margin: 0;
+    padding: 0; 
+}
+.hero-section ul li{
+    list-style: none;
+    margin: 0 2rem;
+}
+.hero-section ul li .fa{
+    font-size: 5rem;
+    line-height: 6rem;
+    transition: .5s;
+    color:white
+}
+
+.hero-section ul li a{
+    position: relative;
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color:#333647;
+    text-align: center;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.hero-section ul li a:hover{
+    transform: translate(0, -1rem);
+}
+.hero-section ul li .fa-linkedin-square:hover{
+    color: #0A66C2;
+}
+.hero-section ul li .fa-github:hover{
+    color:black;
+}
+.hero-section ul li .fa-envelope:hover{
+    color:chocolate;
+}
+.hero-section ul li .fa-file-alt:hover{
+    color:dodgerblue;
+}
+
+.hero-section ul li .fa-linkedin-square .tip{
+    visibility: hidden;
+    width: 12rem;
+    top: 70%;
+    left: 50%;
+    right: 50%;
+    margin-left: -6rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    border-radius: .6rem;
+    padding: 0;
+    position:absolute;
+    z-index: 1; 
+}
+.hero-section ul li .fa-linkedin-square:hover .tip{
+    visibility: visible;
+}
+
+.hero-section ul li .fa-github .tip{
+    visibility: hidden;
+    width: 12rem;
+    top: 70%;
+    left: 50%;
+    right: 50%;
+    margin-left: -6rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    border-radius: .6rem;
+    padding: 0;
+    position:absolute;
+    z-index: 1;
+}
+.hero-section ul li .fa-github:hover .tip{
+    visibility: visible;
+}
+
+
+.hero-section ul li .fa-envelope .tip{
+    visibility: hidden;
+    width: 12rem;
+    top: 70%;
+    left: 50%;
+    right: 50%;
+    margin-left: -6rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    border-radius: .6rem;
+    padding: 0;
+    position:absolute;
+    z-index: 1;
+}
+.hero-section ul li .fa-envelope:hover .tip{
+    visibility: visible;
+}
+
+.hero-section ul li .fa-file-alt .tip{
+    visibility: hidden;
+    width: 12rem;
+    top: 70%;
+    left: 50%;
+    right: 50%;
+    margin-left: -6rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    border-radius: .6rem;
+    padding: 0;
+    position:absolute;
+    z-index: 1;
+}
+.hero-section ul li .fa-file-alt:hover .tip{
+    visibility: visible;
+}
+
+
+
+.hero-section .row{
+    display: flex;
+    align-items:center;
+    height: 100vh;
+}
+
+.hero-section .row h2,h3,p{
+    color: white;
+    text-align: center;
+    
+}
+.hero-section .row h2{
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.hero-section .row h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.hero-section .row img{
+    width: 60%;
+}
+
+canvas.particles-js-canvas-el{
+    position: absolute;
+    width: 100%;
+    height: 100% !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1000;
+    margin: 0rem;
+}
+
+/*About*/
+.about_section{
+    background-color: #282A39;
+    padding: 10rem 0rem;
+}
+.about_section .row{
+    display: flex;
+    align-items:center;
+    height: 30vh;
+    letter-spacing: 1.5vx;
+}
+.about_section .row h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-decoration: underline orange;
+}
+.about_section .row h4{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+/*Education*/
+
+.edu_section{
+    padding: 10rem 0rem;
+    align-items: center;
+    background-color: #333647;
+}
+.edu_section h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    margin-left: -1%;
+    text-decoration: underline orange;
+}
+.edu_section h4{
+    font-size:3rem;
+    font-weight: 500;
+    margin-top: -6%;
+    letter-spacing: 1.5vx;
+}
+.edu_section li{
+    font-size:2rem;
+    font-weight: 400;
+    margin-top: 3%;
+    
+}
+.edu_section .right{
+    left: 10rem;
+}
+
+
+
+
+/*Skills*/
+.skill_section{
+    padding: 7rem 0rem;
+    background-color: #282A39 !important;
+}
+.skill_section .left{
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+.skill_section .right{
+    margin-top: 4%;
+}
+.skill_section .row h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    margin-left: -4%;
+    text-decoration: underline orange;
+}
+.skill_section .row h4{
+    font-size:2rem;
+    font-weight: 400;
+    margin-top: 3%;
+    letter-spacing: 1.5vx;
+    margin-left: -4%;
+}
+.skill_section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2em;
+    
+}
+.skill_section li{
+    padding-left: 1rem;
+}
+.skill_section li::before{
+    content: "•";
+    padding-right: .8rem;
+    color: orange;
+}
+.skill_section .right .each_skill{
+    margin: 2.5rem 0rem;
+}
+.skill_section .right .each_skill span{ 
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.skill_section .right .each_skill .progress{
+    background-color: #81818180;
+    border-radius: 10rem;
+    margin-top: .3rem;
+    height: 1.2rem;
+}
+.skill_section .right .each_skill .progress-bar{
+    background-color: orange;
+}
+
+/*Contact*/
+.contact_section{
+    padding:7rem 0rem;
+    background-color: #333647;
+}
+.contact_section h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    margin-left: -7%;
+    text-decoration: underline orange;
+}
+.contact_section p{
+    font-size:2rem;
+    font-weight: 400;
+    margin-top: 4%;
+    letter-spacing: 1.5vx;
+    margin-left: -5%;
+}
+.contact_section form .form-control{
+    background-color:lightgrey;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 5rem;
+    border: .2rem solid;
+    margin-bottom: 10px;
+    margin-left: -5%;
+}
+.contact_section .btn{
+    background: orange;
+    border: 2rem solid orange;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1rem;
+    font-weight: 500;
+    margin-left: -5%;
+    padding: 0;
+}
+.contact_section .btn:hover{
+    animation:swing;
+    animation-duration: .5s;
+}
+.contact_section ul li{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 8%;
+}
+.contact_section ul li .fa{
+    color: orange;
+}
+.contact_section .right{
+    margin-top: 1%;
+    padding: 0rem 5rem;
+    margin:auto
+}
+
+
+footer{
+    padding: 3px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: #333647;
+}
+
+
+
+@media(min-width:360px) and (max-width:961px){
+    html{
+        font-size: 50%;
+    }
+    .nav_section h1{
+        font-size: 35px !important;
+    }
+    .hero-section .row{
+        margin: 5% -6%;
+    }
+    .about_section{
+        padding: 45% 5%;
+    }
+    .about_section .row{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -35%;
+    }
+    .edu_section{
+        padding: 20% 5%;
+    }
+    .edu_section .right{
+        margin-left: -25%;
+        margin-top: 5%;
+    }
+    .skill_section .row{
+        margin: 5% 5%;
+    }
+    .contact_section .left{
+        margin: 5% 5%;
+    }
+    .contact_section .right{
+        margin-left: -7%;
+    }
+}
